@@ -313,7 +313,7 @@ class Waiter(object):
             if current_state == 'success':
                 logger.debug("Waiting complete, waiter matched the "
                              "success state.")
-                return
+                return response
             if current_state == 'failure':
                 raise WaiterError(
                     name=self.name,
